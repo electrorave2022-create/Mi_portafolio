@@ -1,0 +1,17 @@
+{% extends 'portafolio/base.html' %}
+
+{% block title %}Inicio | Portafolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hola, soy <span class="highlight">{{ nombre }}</span></h1>
+        <p class="subtitle">{{ rol }} en la Universidad del Valle de Guatemala (Campus Altiplano).</p>
+        <p class="bio-intro">Transformando ideas en código limpio, desarrollo móvil y experiencias web funcionales.</p>
+        <div class="hero-buttons">
+            <a href="{% url 'portafolio:proyectos' %}" class="btn-primary">Ver Proyectos</a>
+            <a href="{% url 'portafolio:contacto' %}" class="btn-secondary">Contáctame</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

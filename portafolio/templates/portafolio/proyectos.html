@@ -1,0 +1,65 @@
+{% extends 'portafolio/base.html' %}
+
+{% block title %}Proyectos | Portafolio{% endblock %}
+
+{% block content %}
+<section class="projects-section">
+    <div class="section-header">
+        <span class="section-tag">Proyectos</span>
+        <h2>Ideas convertidas en producto</h2>
+        <p>Proyectos que combinan análisis, desarrollo y atención al detalle para resolver necesidades concretas.</p>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-number">PROYECTO / 01</span>
+                    <span class="card-icon">↗</span>
+                </div>
+                <h3>ContaClick</h3>
+                <p>Aplicación orientada a simplificar el registro y control de información contable mediante una experiencia directa y organizada.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-number">PROYECTO / 02</span>
+                    <span class="card-icon">↗</span>
+                </div>
+                <h3>Scanner Store</h3>
+                <p>Solución móvil de escaneo inteligente para agilizar la identificación y gestión de productos desde un dispositivo Android.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">CameraX</span>
+                <span class="tag">ML Kit</span>
+                <span class="tag">Firebase</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-number">PROYECTO / 03</span>
+                    <span class="card-icon">↗</span>
+                </div>
+                <h3>Directorio Web</h3>
+                <p>Directorio digital responsivo que centraliza información y permite encontrar recursos de forma rápida y accesible.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

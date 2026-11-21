@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Portafolio | César Chiroy{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'portafolio/css/estilos.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="{% url 'portafolio:inicio' %}">César.dev</a></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{% url 'portafolio:inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'portafolio:sobre_mi' %}">Sobre mí</a></li>
+                <li><a href="{% url 'portafolio:habilidades' %}">Habilidades</a></li>
+                <li><a href="{% url 'portafolio:proyectos' %}">Proyectos</a></li>
+                <li><a href="{% url 'portafolio:contacto' %}">Contacto</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2026 César Edyberto Chiroy Bocel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="{% static 'portafolio/js/main.js' %}"></script>
+</body>
+</html>

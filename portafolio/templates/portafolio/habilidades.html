@@ -1,0 +1,66 @@
+{% extends 'portafolio/base.html' %}
+
+{% block title %}Habilidades | Portafolio{% endblock %}
+
+{% block content %}
+<section class="skills-section">
+    <div class="section-header">
+        <span class="section-tag">Habilidades</span>
+        <h2>Herramientas que domino</h2>
+        <p>Una combinación de tecnologías web, móviles y de datos para desarrollar soluciones completas.</p>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-number">01</span>
+                    <span class="card-icon">—</span>
+                </div>
+                <h3>Desarrollo web</h3>
+                <p>Interfaces responsivas, accesibles y enfocadas en experiencias claras.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-number">02</span>
+                    <span class="card-icon">—</span>
+                </div>
+                <h3>Bases de datos & Backend</h3>
+                <p>Modelado, persistencia y gestión eficiente de información.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">SQL Server</span>
+                <span class="tag">MariaDB</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Firebase</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="card-header">
+                    <span class="card-number">03</span>
+                    <span class="card-icon">—</span>
+                </div>
+                <h3>Móvil & Programación</h3>
+                <p>Aplicaciones Android y fundamentos sólidos de infraestructura.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Android</span>
+                <span class="tag">CameraX / ML Kit</span>
+                <span class="tag">Cisco Networking</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

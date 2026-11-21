@@ -1,0 +1,42 @@
+{% extends 'portafolio/base.html' %}
+
+{% block title %}Contacto | Portafolio{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="contact-grid">
+        <div>
+            <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                <span class="section-tag">Contacto</span>
+                <h2>Construyamos algo juntos</h2>
+                <p style="margin: 0; max-width: none;">¿Tienes alguna idea, proyecto u oportunidad? Envíame un mensaje y conversemos sobre cómo convertirla en una solución funcional.</p>
+            </div>
+            <div class="status-badge" style="margin-top: 1rem;">
+                <div class="status-dot"></div>
+                <span>Disponible para nuevos proyectos</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; text-align: center;">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

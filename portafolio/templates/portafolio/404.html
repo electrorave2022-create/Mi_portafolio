@@ -1,0 +1,17 @@
+{% extends 'portafolio/base.html' %}
+
+{% block title %}Página no encontrada | 404{% endblock %}
+
+{% block content %}
+<section class="hero" style="min-height: 60vh;">
+    <div class="hero-content">
+        <span class="section-tag" style="font-size: 1rem; margin-bottom: 1rem;">Error 404</span>
+        <h1 style="font-size: clamp(3rem, 6vw, 5rem); color: var(--accent-color);">Página no encontrada</h1>
+        <p class="subtitle">Lo sentimos, la página que buscas no existe o ha sido movida.</p>
+        <p class="bio-intro">Verifica la dirección web o regresa a la página principal para continuar navegando.</p>
+        <div class="hero-buttons" style="margin-top: 2rem;">
+            <a href="{% url 'portafolio:inicio' %}" class="btn-primary">Regresar al Inicio</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
